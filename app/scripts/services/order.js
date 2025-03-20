@@ -98,7 +98,7 @@ angular.module('angularApp').factory('order', function (authorization, cart, con
         if (order.orderAmountWithDiscount >= 500) {
           order.deliveryCost = 0;
         } else {
-          order.deliveryCost = 60;
+          order.deliveryCost = 50;
         }
       }else if (order.delivery.id === '3'){   // Самовивіз
         order.deliveryCost = 0;
@@ -112,7 +112,7 @@ angular.module('angularApp').factory('order', function (authorization, cart, con
         if (order.orderAmountWithDiscount >= 1000) {
           order.deliveryCost = 0;
         } else {
-          order.deliveryCost = 35;  // 30
+          order.deliveryCost = 39;  // 30
         }
         order.deliveryCost = 0;
       }else if(order.delivery.id === '6') {  //Курьер в обл. центры
